@@ -1,0 +1,28 @@
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\Load Calculation Project.exe
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\Load Calculation Project.deps.json
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\Load Calculation Project.runtimeconfig.json
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\Load Calculation Project.runtimeconfig.dev.json
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\Load Calculation Project.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\ref\Load Calculation Project.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\Load Calculation Project.pdb
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\ExcelDataReader.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\ExcelDataReader.DataSet.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.csproj.AssemblyReference.cache
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load_Calculation_Project.Form1.resources
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.csproj.GenerateResource.cache
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.AssemblyInfoInputs.cache
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.AssemblyInfo.cs
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.csproj.CoreCompileInputs.cache
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.csproj.CopyComplete
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\ref\Load Calculation Project.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.pdb
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.genruntimeconfig.cache
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\System.Text.Encoding.CodePages.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\obj\Debug\net5.0-windows\Load_Calculation_Project.Form2.resources
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\ClosedXML.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\KumarSu\source\repos\Load Calculation Project\Load Calculation Project\bin\Debug\net5.0-windows\ExcelNumberFormat.dll
