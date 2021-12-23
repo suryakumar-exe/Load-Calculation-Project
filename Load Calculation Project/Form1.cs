@@ -22,7 +22,7 @@ namespace Load_Calculation_Project
             InitializeComponent();
         }
         DataTableCollection tableCollection;
-        private void btnbrowse_Click(object sender, EventArgs e)
+        private void btnbrowse_Click(object sender, EventArgs e) //Get Browser
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog() { Filter = "Excel Workbook|*.xlsx|Excel 97-2003 Workbookj|*.xls"})
             {
@@ -49,6 +49,7 @@ namespace Load_Calculation_Project
                                 qv_s5.Items.Add(table.TableName);
                                 qv_s6.Items.Add(table.TableName);
                                 qv_s7.Items.Add(table.TableName);
+                                qv_s8.Items.Add(table.TableName);
                             }
                                
                         }
