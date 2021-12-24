@@ -144,7 +144,7 @@ namespace Load_Calculation_Project
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     Cursor.Current = Cursors.WaitCursor;
-                    DataTable dt = new DataTable();
+                    DataTable dt_FCT = new DataTable();
                     file_name = ofd.FileName;
                     using (XLWorkbook workbook = new XLWorkbook(ofd.FileName))
                     {
@@ -155,18 +155,18 @@ namespace Load_Calculation_Project
                             if (isFirstRow)
                             {
                                 foreach (IXLCell cell in row.Cells())
-                                    dt.Columns.Add(cell.Value.ToString());
+                                    dt_FCT.Columns.Add(cell.Value.ToString());
                                 isFirstRow = false;
                             }
                             else
                             {
-                                dt.Rows.Add();
+                                dt_FCT.Rows.Add();
                                 int i = 0;
                                 foreach (IXLCell cell in row.Cells())
-                                    dt.Rows[dt.Rows.Count - 1][i++] = cell.Value.ToString();
+                                    dt_FCT.Rows[dt_FCT.Rows.Count - 1][i++] = cell.Value.ToString();
                             }
                         }
-                        dataGridView1.DataSource = dt.DefaultView;
+                        dataGridView1.DataSource = dt_FCT.DefaultView;
                     }
                 }
             }
@@ -208,8 +208,8 @@ namespace Load_Calculation_Project
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            DataTable dt = tableCollection[qv_s1.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_qv_s1 = tableCollection[qv_s1.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_qv_s1;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -393,59 +393,83 @@ namespace Load_Calculation_Project
 
         private void qv_s2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = tableCollection[qv_s2.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_qv_s2 = tableCollection[qv_s2.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_qv_s2;
         }
 
         private void qv_s3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = tableCollection[qv_s3.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_qv_s3 = tableCollection[qv_s3.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_qv_s3;
         }
 
         private void qv_s4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = tableCollection[qv_s4.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_qv_s4 = tableCollection[qv_s4.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_qv_s4;
         }
 
         private void qv_s5_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = tableCollection[qv_s5.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_qv_s5 = tableCollection[qv_s5.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_qv_s5;
         }
 
         private void qv_s7_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = tableCollection[qv_s7.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_qv_s7 = tableCollection[qv_s7.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_qv_s7;
         }
 
         private void qv_s6_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = tableCollection[qv_s6.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_qv_s7 = tableCollection[qv_s6.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_qv_s7;
         }
 
         private void additioanl_gen_frame_sheet_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-            DataTable dt = tableCollection[additioanl_gen_frame_sheet.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_additioanl_gen_frame_sheet = tableCollection[additioanl_gen_frame_sheet.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_additioanl_gen_frame_sheet;
         }
 
         private void flop_ref_load_sheet_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-                DataTable dt = tableCollection[flop_ref_load_sheet.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_flop_ref_load_sheet = tableCollection[flop_ref_load_sheet.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_flop_ref_load_sheet;
         }
 
         private void DIVGL1_sheet_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-                 DataTable dt = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTable dt_DIVGL1_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_DIVGL1_sheet;
+        }
+
+        private void DIVGL2_sheet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt_DIVGL2_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_DIVGL2_sheet;
+        }
+
+        private void DIVGL3_sheet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt_DIVGL3_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_DIVGL3_sheet;
+        }
+
+        private void DIVGL4_sheet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt_DIVGL4_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_DIVGL4_sheet;
+        }
+
+        private void DIVGL5_sheet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt_DIVGL5_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
+            dataGridView1.DataSource = dt_DIVGL5_sheet;
         }
     }
 }
