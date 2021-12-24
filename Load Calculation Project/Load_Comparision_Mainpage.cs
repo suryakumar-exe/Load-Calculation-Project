@@ -14,10 +14,10 @@ using System.Windows.Forms;
 
 namespace Load_Calculation_Project
 {
-    public partial class Form1 : Form
+    public partial class load_comparision_mainpage : Form
     {
-        String file_name = "";
-        public Form1()
+      
+        public load_comparision_mainpage()
         {
             InitializeComponent();
         }
@@ -145,7 +145,7 @@ namespace Load_Calculation_Project
                 {
                     Cursor.Current = Cursors.WaitCursor;
                     DataTable dt_FCT = new DataTable();
-                    file_name = ofd.FileName;
+                    fatigue_ct.Text = ofd.FileName;
                     using (XLWorkbook workbook = new XLWorkbook(ofd.FileName))
                     {
                         bool isFirstRow = true;
@@ -470,6 +470,85 @@ namespace Load_Calculation_Project
         {
             DataTable dt_DIVGL5_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
             dataGridView1.DataSource = dt_DIVGL5_sheet;
+        }
+
+        //public bool flag = false;
+
+        public void form_validation()
+        {
+            if (String.IsNullOrEmpty(bartcode.Text))
+            {
+                MessageBox.Show("Enter BART Name");
+      
+            }
+            else if (String.IsNullOrEmpty(pos1.Text) && String.IsNullOrEmpty(pos2.Text) && String.IsNullOrEmpty(pos3.Text) && String.IsNullOrEmpty(pos4.Text) && String.IsNullOrEmpty(pos5.Text))
+            {
+                MessageBox.Show("Enter Atleast 1 Position");
+
+            }
+            else if (String.IsNullOrEmpty(noofyears.Text))
+            {
+                MessageBox.Show("Enter No of Years");
+
+            }
+            else if (String.IsNullOrEmpty(qvexcel.Text))
+            {
+                MessageBox.Show("Import QuickerView Excel");
+                
+            }
+            else if (String.IsNullOrEmpty(additioanl_gen_frame.Text))
+            {
+                MessageBox.Show("Import Additional Gentrator Frame Excel");
+            }
+            else if (String.IsNullOrEmpty(flop_ref_load.Text))
+            {
+                MessageBox.Show("Import Flop Reference Load Excel");
+             
+            }
+            else if (String.IsNullOrEmpty(fatigue_ct.Text))
+            {
+                MessageBox.Show("Import Fatique Excel");
+          
+            }
+            else if (String.IsNullOrEmpty(DIVGL1.Text) && String.IsNullOrEmpty(DIVGL2.Text) && String.IsNullOrEmpty(DIVGL3.Text) && String.IsNullOrEmpty(DIVGL4.Text) && String.IsNullOrEmpty(DIVGL5.Text))
+            {
+                MessageBox.Show("Import Atleast 1 DIVGL Excel");
+            }
+            else
+            {
+                MessageBox.Show("Something Went Wrong!");
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //LOGIC IMPLEMENTATION
+            if (String.IsNullOrEmpty(bartcode.Text) || String.IsNullOrEmpty(pos1.Text) || String.IsNullOrEmpty(qvexcel.Text)
+                || String.IsNullOrEmpty(qvexcel.Text) || String.IsNullOrEmpty(additioanl_gen_frame.Text) 
+                || String.IsNullOrEmpty(flop_ref_load.Text) || String.IsNullOrEmpty(fatigue_ct.Text) || String.IsNullOrEmpty(DIVGL1.Text))
+            {
+                form_validation();
+            }
+            else
+            {
+                MessageBox.Show("Welcome");
+            }
+       
+            
+            
+            
+            
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

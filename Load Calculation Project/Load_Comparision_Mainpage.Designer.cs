@@ -1,7 +1,7 @@
 ﻿
 namespace Load_Calculation_Project
 {
-    partial class Form1
+    partial class load_comparision_mainpage
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,10 +29,10 @@ namespace Load_Calculation_Project
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -72,26 +72,18 @@ namespace Load_Calculation_Project
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.qv_s12 = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.qv_s8 = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
             this.qv_s4 = new System.Windows.Forms.ComboBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.qv_s11 = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.qv_s7 = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.qv_s3 = new System.Windows.Forms.ComboBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.qv_s10 = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.qv_s6 = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.qv_s2 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.qv_s9 = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.qv_s5 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -123,23 +115,23 @@ namespace Load_Calculation_Project
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(1012, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
@@ -149,23 +141,23 @@ namespace Load_Calculation_Project
             // 
             // dataGridView2
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView2.Location = new System.Drawing.Point(1012, 174);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 25;
@@ -194,9 +186,10 @@ namespace Load_Calculation_Project
             this.groupBox1.Controls.Add(this.DIVGL1);
             this.groupBox1.Controls.Add(this.DIVGL1_sheet);
             this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Location = new System.Drawing.Point(24, 446);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(10, 379);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(616, 231);
+            this.groupBox1.Size = new System.Drawing.Size(867, 231);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "EXPORT DIVGL";
@@ -205,15 +198,18 @@ namespace Load_Calculation_Project
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(38, 206);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 15);
+            this.label1.Size = new System.Drawing.Size(93, 15);
             this.label1.TabIndex = 58;
             this.label1.Text = "Export DIVGL 5";
             // 
             // DIVGL5
             // 
-            this.DIVGL5.Location = new System.Drawing.Point(132, 203);
+            this.DIVGL5.Enabled = false;
+            this.DIVGL5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DIVGL5.Location = new System.Drawing.Point(150, 203);
             this.DIVGL5.Name = "DIVGL5";
             this.DIVGL5.Size = new System.Drawing.Size(268, 23);
             this.DIVGL5.TabIndex = 57;
@@ -221,7 +217,7 @@ namespace Load_Calculation_Project
             // DIVGL5_sheet
             // 
             this.DIVGL5_sheet.FormattingEnabled = true;
-            this.DIVGL5_sheet.Location = new System.Drawing.Point(406, 203);
+            this.DIVGL5_sheet.Location = new System.Drawing.Point(505, 203);
             this.DIVGL5_sheet.Name = "DIVGL5_sheet";
             this.DIVGL5_sheet.Size = new System.Drawing.Size(121, 23);
             this.DIVGL5_sheet.TabIndex = 56;
@@ -229,7 +225,8 @@ namespace Load_Calculation_Project
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(533, 203);
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button9.Location = new System.Drawing.Point(424, 203);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 55;
@@ -240,15 +237,18 @@ namespace Load_Calculation_Project
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(38, 169);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 15);
+            this.label8.Size = new System.Drawing.Size(93, 15);
             this.label8.TabIndex = 54;
             this.label8.Text = "Export DIVGL 4";
             // 
             // DIVGL4
             // 
-            this.DIVGL4.Location = new System.Drawing.Point(132, 166);
+            this.DIVGL4.Enabled = false;
+            this.DIVGL4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DIVGL4.Location = new System.Drawing.Point(150, 166);
             this.DIVGL4.Name = "DIVGL4";
             this.DIVGL4.Size = new System.Drawing.Size(268, 23);
             this.DIVGL4.TabIndex = 53;
@@ -256,7 +256,7 @@ namespace Load_Calculation_Project
             // DIVGL4_sheet
             // 
             this.DIVGL4_sheet.FormattingEnabled = true;
-            this.DIVGL4_sheet.Location = new System.Drawing.Point(406, 166);
+            this.DIVGL4_sheet.Location = new System.Drawing.Point(505, 166);
             this.DIVGL4_sheet.Name = "DIVGL4_sheet";
             this.DIVGL4_sheet.Size = new System.Drawing.Size(121, 23);
             this.DIVGL4_sheet.TabIndex = 52;
@@ -264,7 +264,8 @@ namespace Load_Calculation_Project
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(533, 166);
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.Location = new System.Drawing.Point(424, 166);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 51;
@@ -275,15 +276,18 @@ namespace Load_Calculation_Project
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(38, 129);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 15);
+            this.label9.Size = new System.Drawing.Size(93, 15);
             this.label9.TabIndex = 50;
             this.label9.Text = "Export DIVGL 3";
             // 
             // DIVGL3
             // 
-            this.DIVGL3.Location = new System.Drawing.Point(132, 126);
+            this.DIVGL3.Enabled = false;
+            this.DIVGL3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DIVGL3.Location = new System.Drawing.Point(150, 126);
             this.DIVGL3.Name = "DIVGL3";
             this.DIVGL3.Size = new System.Drawing.Size(268, 23);
             this.DIVGL3.TabIndex = 49;
@@ -291,7 +295,7 @@ namespace Load_Calculation_Project
             // DIVGL3_sheet
             // 
             this.DIVGL3_sheet.FormattingEnabled = true;
-            this.DIVGL3_sheet.Location = new System.Drawing.Point(406, 126);
+            this.DIVGL3_sheet.Location = new System.Drawing.Point(505, 126);
             this.DIVGL3_sheet.Name = "DIVGL3_sheet";
             this.DIVGL3_sheet.Size = new System.Drawing.Size(121, 23);
             this.DIVGL3_sheet.TabIndex = 48;
@@ -299,7 +303,8 @@ namespace Load_Calculation_Project
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(533, 126);
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.Location = new System.Drawing.Point(424, 126);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 47;
@@ -310,15 +315,18 @@ namespace Load_Calculation_Project
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(38, 86);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 15);
+            this.label6.Size = new System.Drawing.Size(93, 15);
             this.label6.TabIndex = 46;
             this.label6.Text = "Export DIVGL 2";
             // 
             // DIVGL2
             // 
-            this.DIVGL2.Location = new System.Drawing.Point(132, 83);
+            this.DIVGL2.Enabled = false;
+            this.DIVGL2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DIVGL2.Location = new System.Drawing.Point(150, 83);
             this.DIVGL2.Name = "DIVGL2";
             this.DIVGL2.Size = new System.Drawing.Size(268, 23);
             this.DIVGL2.TabIndex = 45;
@@ -326,7 +334,7 @@ namespace Load_Calculation_Project
             // DIVGL2_sheet
             // 
             this.DIVGL2_sheet.FormattingEnabled = true;
-            this.DIVGL2_sheet.Location = new System.Drawing.Point(406, 83);
+            this.DIVGL2_sheet.Location = new System.Drawing.Point(505, 83);
             this.DIVGL2_sheet.Name = "DIVGL2_sheet";
             this.DIVGL2_sheet.Size = new System.Drawing.Size(121, 23);
             this.DIVGL2_sheet.TabIndex = 44;
@@ -334,7 +342,8 @@ namespace Load_Calculation_Project
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(533, 83);
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(424, 83);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 43;
@@ -345,15 +354,18 @@ namespace Load_Calculation_Project
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(38, 46);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 15);
+            this.label7.Size = new System.Drawing.Size(93, 15);
             this.label7.TabIndex = 42;
             this.label7.Text = "Export DIVGL 1";
             // 
             // DIVGL1
             // 
-            this.DIVGL1.Location = new System.Drawing.Point(132, 43);
+            this.DIVGL1.Enabled = false;
+            this.DIVGL1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DIVGL1.Location = new System.Drawing.Point(150, 43);
             this.DIVGL1.Name = "DIVGL1";
             this.DIVGL1.Size = new System.Drawing.Size(268, 23);
             this.DIVGL1.TabIndex = 41;
@@ -361,7 +373,7 @@ namespace Load_Calculation_Project
             // DIVGL1_sheet
             // 
             this.DIVGL1_sheet.FormattingEnabled = true;
-            this.DIVGL1_sheet.Location = new System.Drawing.Point(406, 43);
+            this.DIVGL1_sheet.Location = new System.Drawing.Point(505, 43);
             this.DIVGL1_sheet.Name = "DIVGL1_sheet";
             this.DIVGL1_sheet.Size = new System.Drawing.Size(121, 23);
             this.DIVGL1_sheet.TabIndex = 40;
@@ -369,7 +381,8 @@ namespace Load_Calculation_Project
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(533, 43);
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(424, 43);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 39;
@@ -379,21 +392,26 @@ namespace Load_Calculation_Project
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(149, 763);
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button7.Location = new System.Drawing.Point(135, 696);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(185, 39);
             this.button7.TabIndex = 44;
             this.button7.Text = "GENTRATE";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(353, 763);
+            this.button8.BackColor = System.Drawing.Color.Chocolate;
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button8.Location = new System.Drawing.Point(339, 696);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(185, 39);
             this.button8.TabIndex = 45;
             this.button8.Text = "CLEAR ALL";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // groupBox3
             // 
@@ -407,42 +425,48 @@ namespace Load_Calculation_Project
             this.groupBox3.Controls.Add(this.pos5);
             this.groupBox3.Controls.Add(this.pos1);
             this.groupBox3.Controls.Add(this.bartcode);
-            this.groupBox3.Location = new System.Drawing.Point(26, 42);
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox3.Location = new System.Drawing.Point(12, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(692, 139);
+            this.groupBox3.Size = new System.Drawing.Size(865, 139);
             this.groupBox3.TabIndex = 47;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Info";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.Location = new System.Drawing.Point(38, 46);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 15);
+            this.label12.Size = new System.Drawing.Size(68, 15);
             this.label12.TabIndex = 66;
             this.label12.Text = "BART code";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(38, 80);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 15);
+            this.label11.Size = new System.Drawing.Size(54, 15);
             this.label11.TabIndex = 65;
             this.label11.Text = "Turbines";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(38, 109);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 15);
+            this.label10.Size = new System.Drawing.Size(70, 15);
             this.label10.TabIndex = 64;
             this.label10.Text = "No of Years";
             // 
             // noofyears
             // 
+            this.noofyears.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.noofyears.FormattingEnabled = true;
             this.noofyears.Items.AddRange(new object[] {
             "20",
@@ -455,6 +479,7 @@ namespace Load_Calculation_Project
             // 
             // pos2
             // 
+            this.pos2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pos2.Location = new System.Drawing.Point(203, 80);
             this.pos2.Name = "pos2";
             this.pos2.PlaceholderText = "POS2";
@@ -463,6 +488,7 @@ namespace Load_Calculation_Project
             // 
             // pos3
             // 
+            this.pos3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pos3.Location = new System.Drawing.Point(283, 80);
             this.pos3.Name = "pos3";
             this.pos3.PlaceholderText = "POS3";
@@ -471,6 +497,7 @@ namespace Load_Calculation_Project
             // 
             // pos4
             // 
+            this.pos4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pos4.Location = new System.Drawing.Point(361, 80);
             this.pos4.Name = "pos4";
             this.pos4.PlaceholderText = "POS4";
@@ -479,6 +506,7 @@ namespace Load_Calculation_Project
             // 
             // pos5
             // 
+            this.pos5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pos5.Location = new System.Drawing.Point(438, 80);
             this.pos5.Name = "pos5";
             this.pos5.PlaceholderText = "POS5";
@@ -487,6 +515,7 @@ namespace Load_Calculation_Project
             // 
             // pos1
             // 
+            this.pos1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pos1.Location = new System.Drawing.Point(128, 80);
             this.pos1.Name = "pos1";
             this.pos1.PlaceholderText = "POS1";
@@ -495,6 +524,7 @@ namespace Load_Calculation_Project
             // 
             // bartcode
             // 
+            this.bartcode.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bartcode.Location = new System.Drawing.Point(128, 46);
             this.bartcode.Name = "bartcode";
             this.bartcode.Size = new System.Drawing.Size(128, 23);
@@ -506,11 +536,10 @@ namespace Load_Calculation_Project
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Location = new System.Drawing.Point(551, 9);
+            this.label13.Location = new System.Drawing.Point(537, -21);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(236, 30);
+            this.label13.Size = new System.Drawing.Size(0, 30);
             this.label13.TabIndex = 58;
-            this.label13.Text = "LOADS COMPARISION";
             // 
             // groupBox4
             // 
@@ -523,35 +552,28 @@ namespace Load_Calculation_Project
             this.groupBox4.Controls.Add(this.additioanl_gen_frame);
             this.groupBox4.Controls.Add(this.additioanl_gen_frame_sheet);
             this.groupBox4.Controls.Add(this.button2);
-            this.groupBox4.Location = new System.Drawing.Point(24, 187);
+            this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox4.Location = new System.Drawing.Point(10, 157);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(790, 253);
+            this.groupBox4.Size = new System.Drawing.Size(867, 221);
             this.groupBox4.TabIndex = 59;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Inputs for comparsion";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label31);
-            this.groupBox2.Controls.Add(this.qv_s12);
             this.groupBox2.Controls.Add(this.label32);
             this.groupBox2.Controls.Add(this.qv_s8);
             this.groupBox2.Controls.Add(this.label33);
             this.groupBox2.Controls.Add(this.qv_s4);
-            this.groupBox2.Controls.Add(this.label26);
-            this.groupBox2.Controls.Add(this.qv_s11);
             this.groupBox2.Controls.Add(this.label27);
             this.groupBox2.Controls.Add(this.qv_s7);
             this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.qv_s3);
-            this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.qv_s10);
             this.groupBox2.Controls.Add(this.label22);
             this.groupBox2.Controls.Add(this.qv_s6);
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.qv_s2);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.qv_s9);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.qv_s5);
             this.groupBox2.Controls.Add(this.label14);
@@ -559,43 +581,29 @@ namespace Load_Calculation_Project
             this.groupBox2.Controls.Add(this.qvexcel);
             this.groupBox2.Controls.Add(this.qv_s1);
             this.groupBox2.Controls.Add(this.btnbrowse);
-            this.groupBox2.Location = new System.Drawing.Point(36, 22);
+            this.groupBox2.Location = new System.Drawing.Point(10, 22);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(748, 153);
+            this.groupBox2.Size = new System.Drawing.Size(849, 125);
             this.groupBox2.TabIndex = 52;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "QUICKER VIEW";
             // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(564, 128);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(36, 15);
-            this.label31.TabIndex = 81;
-            this.label31.Text = "Blade";
-            // 
-            // qv_s12
-            // 
-            this.qv_s12.FormattingEnabled = true;
-            this.qv_s12.Location = new System.Drawing.Point(606, 120);
-            this.qv_s12.Name = "qv_s12";
-            this.qv_s12.Size = new System.Drawing.Size(121, 23);
-            this.qv_s12.TabIndex = 80;
-            // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(564, 99);
+            this.label32.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label32.Location = new System.Drawing.Point(660, 99);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(36, 15);
+            this.label32.Size = new System.Drawing.Size(42, 15);
             this.label32.TabIndex = 79;
-            this.label32.Text = "Blade";
+            this.label32.Text = "Tower";
             // 
             // qv_s8
             // 
+            this.qv_s8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qv_s8.FormattingEnabled = true;
-            this.qv_s8.Location = new System.Drawing.Point(606, 91);
+            this.qv_s8.Location = new System.Drawing.Point(722, 91);
             this.qv_s8.Name = "qv_s8";
             this.qv_s8.Size = new System.Drawing.Size(121, 23);
             this.qv_s8.TabIndex = 78;
@@ -603,51 +611,40 @@ namespace Load_Calculation_Project
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(564, 70);
+            this.label33.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label33.Location = new System.Drawing.Point(660, 70);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(36, 15);
+            this.label33.Size = new System.Drawing.Size(47, 15);
             this.label33.TabIndex = 77;
-            this.label33.Text = "Blade";
+            this.label33.Text = "GBX Zf";
             // 
             // qv_s4
             // 
+            this.qv_s4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qv_s4.FormattingEnabled = true;
-            this.qv_s4.Location = new System.Drawing.Point(606, 62);
+            this.qv_s4.Location = new System.Drawing.Point(722, 62);
             this.qv_s4.Name = "qv_s4";
             this.qv_s4.Size = new System.Drawing.Size(121, 23);
             this.qv_s4.TabIndex = 76;
             this.qv_s4.SelectedIndexChanged += new System.EventHandler(this.qv_s4_SelectedIndexChanged);
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(391, 128);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(36, 15);
-            this.label26.TabIndex = 71;
-            this.label26.Text = "Blade";
-            // 
-            // qv_s11
-            // 
-            this.qv_s11.FormattingEnabled = true;
-            this.qv_s11.Location = new System.Drawing.Point(433, 120);
-            this.qv_s11.Name = "qv_s11";
-            this.qv_s11.Size = new System.Drawing.Size(121, 23);
-            this.qv_s11.TabIndex = 70;
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(391, 99);
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label27.Location = new System.Drawing.Point(431, 99);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(36, 15);
+            this.label27.Size = new System.Drawing.Size(29, 15);
             this.label27.TabIndex = 69;
-            this.label27.Text = "Blade";
+            this.label27.Text = "Yaw";
             // 
             // qv_s7
             // 
+            this.qv_s7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qv_s7.FormattingEnabled = true;
-            this.qv_s7.Location = new System.Drawing.Point(433, 91);
+            this.qv_s7.Location = new System.Drawing.Point(511, 91);
             this.qv_s7.Name = "qv_s7";
             this.qv_s7.Size = new System.Drawing.Size(121, 23);
             this.qv_s7.TabIndex = 68;
@@ -656,51 +653,40 @@ namespace Load_Calculation_Project
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(391, 70);
+            this.label28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label28.Location = new System.Drawing.Point(431, 70);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(36, 15);
+            this.label28.Size = new System.Drawing.Size(80, 15);
             this.label28.TabIndex = 67;
-            this.label28.Text = "Blade";
+            this.label28.Text = "GBX Support";
             // 
             // qv_s3
             // 
+            this.qv_s3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qv_s3.FormattingEnabled = true;
-            this.qv_s3.Location = new System.Drawing.Point(433, 62);
+            this.qv_s3.Location = new System.Drawing.Point(511, 62);
             this.qv_s3.Name = "qv_s3";
             this.qv_s3.Size = new System.Drawing.Size(121, 23);
             this.qv_s3.TabIndex = 66;
             this.qv_s3.SelectedIndexChanged += new System.EventHandler(this.qv_s3_SelectedIndexChanged);
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(219, 128);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(36, 15);
-            this.label21.TabIndex = 61;
-            this.label21.Text = "Blade";
-            // 
-            // qv_s10
-            // 
-            this.qv_s10.FormattingEnabled = true;
-            this.qv_s10.Location = new System.Drawing.Point(261, 120);
-            this.qv_s10.Name = "qv_s10";
-            this.qv_s10.Size = new System.Drawing.Size(121, 23);
-            this.qv_s10.TabIndex = 60;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(219, 99);
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label22.Location = new System.Drawing.Point(251, 99);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(36, 15);
+            this.label22.Size = new System.Drawing.Size(30, 15);
             this.label22.TabIndex = 59;
-            this.label22.Text = "Blade";
+            this.label22.Text = "Hub";
             // 
             // qv_s6
             // 
+            this.qv_s6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qv_s6.FormattingEnabled = true;
-            this.qv_s6.Location = new System.Drawing.Point(261, 91);
+            this.qv_s6.Location = new System.Drawing.Point(293, 91);
             this.qv_s6.Name = "qv_s6";
             this.qv_s6.Size = new System.Drawing.Size(121, 23);
             this.qv_s6.TabIndex = 58;
@@ -709,51 +695,40 @@ namespace Load_Calculation_Project
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(24, 99);
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label23.Location = new System.Drawing.Point(33, 99);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(64, 15);
+            this.label23.Size = new System.Drawing.Size(67, 15);
             this.label23.TabIndex = 57;
             this.label23.Text = "Main Shaft";
             // 
             // qv_s2
             // 
+            this.qv_s2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qv_s2.FormattingEnabled = true;
-            this.qv_s2.Location = new System.Drawing.Point(261, 62);
+            this.qv_s2.Location = new System.Drawing.Point(293, 62);
             this.qv_s2.Name = "qv_s2";
             this.qv_s2.Size = new System.Drawing.Size(121, 23);
             this.qv_s2.TabIndex = 56;
             this.qv_s2.SelectedIndexChanged += new System.EventHandler(this.qv_s2_SelectedIndexChanged);
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(31, 128);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(53, 15);
-            this.label17.TabIndex = 51;
-            this.label17.Text = "Genrator";
-            // 
-            // qv_s9
-            // 
-            this.qv_s9.FormattingEnabled = true;
-            this.qv_s9.Location = new System.Drawing.Point(92, 120);
-            this.qv_s9.Name = "qv_s9";
-            this.qv_s9.Size = new System.Drawing.Size(121, 23);
-            this.qv_s9.TabIndex = 50;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(219, 70);
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label15.Location = new System.Drawing.Point(251, 70);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(34, 15);
+            this.label15.Size = new System.Drawing.Size(35, 15);
             this.label15.TabIndex = 49;
-            this.label15.Text = "pitch";
+            this.label15.Text = "Pitch";
             // 
             // qv_s5
             // 
+            this.qv_s5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qv_s5.FormattingEnabled = true;
-            this.qv_s5.Location = new System.Drawing.Point(92, 91);
+            this.qv_s5.Location = new System.Drawing.Point(101, 91);
             this.qv_s5.Name = "qv_s5";
             this.qv_s5.Size = new System.Drawing.Size(121, 23);
             this.qv_s5.TabIndex = 48;
@@ -762,32 +737,39 @@ namespace Load_Calculation_Project
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(50, 70);
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label14.Location = new System.Drawing.Point(33, 70);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(36, 15);
+            this.label14.Size = new System.Drawing.Size(38, 15);
             this.label14.TabIndex = 47;
             this.label14.Text = "Blade";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 30);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(20, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 15);
+            this.label3.Size = new System.Drawing.Size(110, 15);
             this.label3.TabIndex = 11;
             this.label3.Text = "Quickerview Excel";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // qvexcel
             // 
-            this.qvexcel.Location = new System.Drawing.Point(145, 22);
+            this.qvexcel.Enabled = false;
+            this.qvexcel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.qvexcel.Location = new System.Drawing.Point(140, 22);
             this.qvexcel.Name = "qvexcel";
             this.qvexcel.Size = new System.Drawing.Size(268, 23);
             this.qvexcel.TabIndex = 10;
             // 
             // qv_s1
             // 
+            this.qv_s1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qv_s1.FormattingEnabled = true;
-            this.qv_s1.Location = new System.Drawing.Point(92, 62);
+            this.qv_s1.Location = new System.Drawing.Point(101, 62);
             this.qv_s1.Name = "qv_s1";
             this.qv_s1.Size = new System.Drawing.Size(121, 23);
             this.qv_s1.TabIndex = 9;
@@ -795,7 +777,8 @@ namespace Load_Calculation_Project
             // 
             // btnbrowse
             // 
-            this.btnbrowse.Location = new System.Drawing.Point(419, 21);
+            this.btnbrowse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnbrowse.Location = new System.Drawing.Point(414, 21);
             this.btnbrowse.Name = "btnbrowse";
             this.btnbrowse.Size = new System.Drawing.Size(75, 23);
             this.btnbrowse.TabIndex = 8;
@@ -806,15 +789,18 @@ namespace Load_Calculation_Project
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 224);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(22, 200);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 15);
+            this.label5.Size = new System.Drawing.Size(121, 15);
             this.label5.TabIndex = 51;
             this.label5.Text = "Flop Reference Load";
             // 
             // flop_ref_load
             // 
-            this.flop_ref_load.Location = new System.Drawing.Point(150, 221);
+            this.flop_ref_load.Enabled = false;
+            this.flop_ref_load.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.flop_ref_load.Location = new System.Drawing.Point(150, 193);
             this.flop_ref_load.Name = "flop_ref_load";
             this.flop_ref_load.Size = new System.Drawing.Size(268, 23);
             this.flop_ref_load.TabIndex = 50;
@@ -822,7 +808,7 @@ namespace Load_Calculation_Project
             // flop_ref_load_sheet
             // 
             this.flop_ref_load_sheet.FormattingEnabled = true;
-            this.flop_ref_load_sheet.Location = new System.Drawing.Point(424, 221);
+            this.flop_ref_load_sheet.Location = new System.Drawing.Point(505, 188);
             this.flop_ref_load_sheet.Name = "flop_ref_load_sheet";
             this.flop_ref_load_sheet.Size = new System.Drawing.Size(121, 23);
             this.flop_ref_load_sheet.TabIndex = 49;
@@ -830,7 +816,8 @@ namespace Load_Calculation_Project
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(551, 221);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(424, 192);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 48;
@@ -841,15 +828,18 @@ namespace Load_Calculation_Project
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 184);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(2, 160);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 15);
+            this.label4.Size = new System.Drawing.Size(143, 15);
             this.label4.TabIndex = 47;
             this.label4.Text = "Addtion Genrater Frame";
             // 
             // additioanl_gen_frame
             // 
-            this.additioanl_gen_frame.Location = new System.Drawing.Point(150, 181);
+            this.additioanl_gen_frame.Enabled = false;
+            this.additioanl_gen_frame.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.additioanl_gen_frame.Location = new System.Drawing.Point(150, 153);
             this.additioanl_gen_frame.Name = "additioanl_gen_frame";
             this.additioanl_gen_frame.Size = new System.Drawing.Size(268, 23);
             this.additioanl_gen_frame.TabIndex = 46;
@@ -857,7 +847,7 @@ namespace Load_Calculation_Project
             // additioanl_gen_frame_sheet
             // 
             this.additioanl_gen_frame_sheet.FormattingEnabled = true;
-            this.additioanl_gen_frame_sheet.Location = new System.Drawing.Point(424, 181);
+            this.additioanl_gen_frame_sheet.Location = new System.Drawing.Point(505, 152);
             this.additioanl_gen_frame_sheet.Name = "additioanl_gen_frame_sheet";
             this.additioanl_gen_frame_sheet.Size = new System.Drawing.Size(121, 23);
             this.additioanl_gen_frame_sheet.TabIndex = 45;
@@ -865,7 +855,8 @@ namespace Load_Calculation_Project
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(551, 181);
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(424, 152);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 44;
@@ -876,22 +867,25 @@ namespace Load_Calculation_Project
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 686);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(28, 619);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 15);
+            this.label2.Size = new System.Drawing.Size(27, 15);
             this.label2.TabIndex = 62;
             this.label2.Text = "FCT";
             // 
             // fatigue_ct
             // 
-            this.fatigue_ct.Location = new System.Drawing.Point(156, 683);
+            this.fatigue_ct.Enabled = false;
+            this.fatigue_ct.Location = new System.Drawing.Point(160, 616);
             this.fatigue_ct.Name = "fatigue_ct";
             this.fatigue_ct.Size = new System.Drawing.Size(268, 23);
             this.fatigue_ct.TabIndex = 61;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(430, 682);
+            this.button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button10.Location = new System.Drawing.Point(434, 615);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 59;
@@ -902,23 +896,25 @@ namespace Load_Calculation_Project
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(42, 726);
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(28, 659);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(102, 15);
+            this.label16.Size = new System.Drawing.Size(110, 15);
             this.label16.TabIndex = 66;
             this.label16.Text = "Result Export Path";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // export_result
             // 
-            this.export_result.Location = new System.Drawing.Point(156, 723);
+            this.export_result.Location = new System.Drawing.Point(160, 656);
             this.export_result.Name = "export_result";
             this.export_result.Size = new System.Drawing.Size(268, 23);
             this.export_result.TabIndex = 65;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(430, 722);
+            this.button11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button11.Location = new System.Drawing.Point(434, 655);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 63;
@@ -926,7 +922,7 @@ namespace Load_Calculation_Project
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // Form1
+            // load_comparision_mainpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -945,7 +941,7 @@ namespace Load_Calculation_Project
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Name = "load_comparision_mainpage";
             this.Text = "Loads Comparision";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -969,25 +965,20 @@ namespace Load_Calculation_Project
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox DIVGL4;
         private System.Windows.Forms.ComboBox DIVGL4_sheet;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox DIVGL3;
         private System.Windows.Forms.ComboBox DIVGL3_sheet;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox DIVGL2;
         private System.Windows.Forms.ComboBox DIVGL2_sheet;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox DIVGL1;
         private System.Windows.Forms.ComboBox DIVGL1_sheet;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox DIVGL5;
         private System.Windows.Forms.ComboBox DIVGL5_sheet;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
@@ -1002,26 +993,18 @@ namespace Load_Calculation_Project
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.ComboBox qv_s12;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.ComboBox qv_s8;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox qv_s4;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox qv_s11;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.ComboBox qv_s7;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.ComboBox qv_s3;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox qv_s10;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox qv_s6;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox qv_s2;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox qv_s9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox qv_s5;
         private System.Windows.Forms.Label label14;
@@ -1043,6 +1026,11 @@ namespace Load_Calculation_Project
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox export_result;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

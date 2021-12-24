@@ -42,8 +42,7 @@ C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\
 C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\bin\Debug\net5.0-windows\System.Text.Encoding.CodePages.dll
 C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.csproj.AssemblyReference.cache
-C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\obj\Debug\net5.0-windows\Load_Calculation_Project.Form1.resources
-C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\obj\Debug\net5.0-windows\Load_Calculation_Project.Form2.resources
+C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\obj\Debug\net5.0-windows\Load_Calculation_Project.load_comparision_mainpage.resources
 C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.csproj.GenerateResource.cache
 C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\KumarSu\Source\Repos\Load-Calculation-Project\Load Calculation Project\obj\Debug\net5.0-windows\Load Calculation Project.AssemblyInfoInputs.cache
