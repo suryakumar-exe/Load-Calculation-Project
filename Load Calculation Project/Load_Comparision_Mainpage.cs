@@ -441,7 +441,7 @@ namespace Load_Calculation_Project
             dataGridView1.DataSource = dt_flop_ref_load_sheet;
         }
 
-        private void DIVGL1_sheet_SelectedIndexChanged(object sender, EventArgs e)
+        public void DIVGL1_sheet_SelectedIndexChanged(object sender, EventArgs e)
         {
             
             DataTable dt_DIVGL1_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
@@ -553,35 +553,59 @@ namespace Load_Calculation_Project
 
         private void button12_Click(object sender, EventArgs e)
         {
-           /* DataView dv1 = dataGridView2.DataSource as DataView;
-            foreach (DataColumn column in dv1)
+            DataView dv1 = dataGridView2.DataSource as DataView;
+            DataTable dt_DIVGL1_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
+            //DataTable loadDT = new DataTable();
+            /*foreach (DataColumn dataColumn in dt_DIVGL1_sheet.Columns)
             {
-                Console.WriteLine(column.ColumnName);
-            }
-
-*/
-
-
-
-
-            DataView dv = dataGridView1.DataSource as DataView;
-     
-            string mod = "Eyxy@123";
-            string val = "20";
-
-            char special_char = ' ';
-            string specialChar = @"\|!#$%&/()=?»«@£§€{}.-;'<>_,";
-            foreach (var item in mod)
-            {
-                if (specialChar.Contains(item))
+                foreach(DataRow row in dt_DIVGL1_sheet.Rows)
                 {
-                    special_char = item;
+                    MessageBox.Show(row[dataColumn.ColumnName].ToString());
+                }
+                
+            }*/
+            
+            foreach (DataRow dataRow in dt_DIVGL1_sheet.Rows)
+            {
+                List<string> dic = new List<string>();
+                dic.Add("val1");
+                dic.Add("val2");
+                int i = 0;
+                foreach (var item in dataRow.ItemArray)
+                {
+                    //MessageBox.Show(item.ToString());
+                   
+                    dic[i] = item.ToString();
+                    i += 1;
+                   
+                 }
+                DataView dv = dataGridView1.DataSource as DataView;
+
+                string mod = dic[0];
+                string val = dic[1];
+
+                char special_char = ' ';
+                string specialChar = @"\|!#$%&/()=?»«@£§€{}.-;'<>_,";
+                foreach (var item in mod)
+                {
+                    if (specialChar.Contains(item))
+                    {
+                        special_char = item;
+                        string[] smod = mod.Split(special_char);
+                        dv.RowFilter = "Model ='" + smod[0] + "' AND Value ='" + val + "'";
+                    }
+                    else
+                    {
+                        dv.RowFilter = "Model ='" + mod + "' AND Value ='" + val + "'";
+                    }
+
                 }
             }
-            string[] smod = mod.Split(special_char);
-            dv.RowFilter = "Model ='" + smod[0] + "' AND Value ='"+val+"'";
-            MessageBox.Show(smod[0]);
-        
+            
+           
+            /*dv.RowFilter = "Model ='" + mod + "' AND Value ='" + val + "'";
+            MessageBox.Show(smod[0]);*/
+
             /*char special_char;
             string specialChar = @"\|!#$%&/()=?»«@£§€{}.-;'<>_,";
 

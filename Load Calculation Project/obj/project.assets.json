@@ -4937,6 +4937,7 @@
       "ClosedXML >= 0.95.4",
       "ExcelDataReader >= 3.6.0",
       "ExcelDataReader.DataSet >= 3.6.0",
+      "System.Collections >= 4.3.0",
       "System.Text.Encoding.CodePages >= 6.0.0"
     ]
   },
@@ -4995,6 +4996,10 @@
           "ExcelDataReader.DataSet": {
             "target": "Package",
             "version": "[3.6.0, )"
+          },
+          "System.Collections": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           },
           "System.Text.Encoding.CodePages": {
             "target": "Package",
