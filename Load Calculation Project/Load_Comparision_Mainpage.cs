@@ -445,7 +445,7 @@ namespace Load_Calculation_Project
         {
             
             DataTable dt_DIVGL1_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt_DIVGL1_sheet;
+            dataGridView2.DataSource = dt_DIVGL1_sheet;
         }
 
         private void DIVGL2_sheet_SelectedIndexChanged(object sender, EventArgs e)
@@ -549,6 +549,50 @@ namespace Load_Calculation_Project
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+           /* DataView dv1 = dataGridView2.DataSource as DataView;
+            foreach (DataColumn column in dv1)
+            {
+                Console.WriteLine(column.ColumnName);
+            }
+
+*/
+
+
+
+
+            DataView dv = dataGridView1.DataSource as DataView;
+     
+            string mod = "Eyxy@123";
+            string val = "20";
+
+            char special_char = ' ';
+            string specialChar = @"\|!#$%&/()=?»«@£§€{}.-;'<>_,";
+            foreach (var item in mod)
+            {
+                if (specialChar.Contains(item))
+                {
+                    special_char = item;
+                }
+            }
+            string[] smod = mod.Split(special_char);
+            dv.RowFilter = "Model ='" + smod[0] + "' AND Value ='"+val+"'";
+            MessageBox.Show(smod[0]);
+        
+            /*char special_char;
+            string specialChar = @"\|!#$%&/()=?»«@£§€{}.-;'<>_,";
+
+            foreach (var item in mod)
+            {
+                if (specialChar.Contains(item))
+                {
+                    special_char = item;
+                }
+            }
+            string[] smod = mod.Split('@');*/
         }
     }
 }
