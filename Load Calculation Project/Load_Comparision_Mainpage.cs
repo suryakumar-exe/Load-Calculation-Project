@@ -555,6 +555,10 @@ namespace Load_Calculation_Project
         {
             DataView dv1 = dataGridView2.DataSource as DataView;
             DataTable dt_DIVGL1_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
+
+            XLWorkbook wb = new XLWorkbook();
+            wb.Worksheets.Add(dt_DIVGL1_sheet, "WorksheetName");
+            
             //DataTable loadDT = new DataTable();
             /*foreach (DataColumn dataColumn in dt_DIVGL1_sheet.Columns)
             {
@@ -564,7 +568,7 @@ namespace Load_Calculation_Project
                 }
                 
             }*/
-            
+
             foreach (DataRow dataRow in dt_DIVGL1_sheet.Rows)
             {
                 List<string> dic = new List<string>();
