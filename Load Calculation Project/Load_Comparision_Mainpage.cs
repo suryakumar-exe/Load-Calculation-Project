@@ -622,5 +622,15 @@ namespace Load_Calculation_Project
             }
             string[] smod = mod.Split('@');*/
         }
+
+        private void qvexcel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void additioanl_gen_frame_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
