@@ -24,39 +24,41 @@ namespace Load_Calculation_Project
         DataTableCollection tableCollection;
         private void btnbrowse_Click(object sender, EventArgs e) //Get Browser
         {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog() { Filter = "Excel Workbook|*.xlsx|Excel 97-2003 Workbookj|*.xls"})
+
+            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Excel Workbook|*.xlsx", Multiselect = false })
+
             {
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+
+                if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    qvexcel.Text = openFileDialog.FileName;
-                    using(var stream = File.Open(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                    Cursor.Current = Cursors.WaitCursor;
+                    DataTable dt_FCT = new DataTable();
+                    fatigue_ct.Text = ofd.FileName;
+                    using (XLWorkbook workbook = new XLWorkbook(ofd.FileName))
                     {
-                        System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
-                        using (IExcelDataReader reader = ExcelReaderFactory.CreateReader(stream))
+                        bool isFirstRow = true;
+                        var rows = workbook.Worksheet(1).RowsUsed();
+                        foreach (var row in rows)
                         {
-                            DataSet result = reader.AsDataSet(new ExcelDataSetConfiguration()
+                            if (isFirstRow)
                             {
-                                ConfigureDataTable =(_)=>new ExcelDataTableConfiguration() { UseHeaderRow=true}
-                            });
-                            tableCollection = result.Tables;
-                            qv_s1.Items.Clear();
-                            foreach (DataTable table in tableCollection)
-                            {
-                                qv_s1.Items.Add(table.TableName);
-                                qv_s2.Items.Add(table.TableName);
-                                qv_s3.Items.Add(table.TableName);
-                                qv_s4.Items.Add(table.TableName);
-                                qv_s5.Items.Add(table.TableName);
-                                qv_s6.Items.Add(table.TableName);
-                                qv_s7.Items.Add(table.TableName);
-                                qv_s8.Items.Add(table.TableName);
+                                foreach (IXLCell cell in row.Cells())
+                                    dt_FCT.Columns.Add(cell.Value.ToString());
+                                isFirstRow = false;
                             }
-                               
+                            else
+                            {
+                                dt_FCT.Rows.Add();
+                                int i = 0;
+                                foreach (IXLCell cell in row.Cells())
+                                    dt_FCT.Rows[dt_FCT.Rows.Count - 1][i++] = cell.Value.ToString();
+                            }
                         }
+
+                        dataGridView1.DataSource = dt_FCT.DefaultView;
                     }
                 }
-            }
-        }
+            }   }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -166,7 +168,34 @@ namespace Load_Calculation_Project
                                     dt_FCT.Rows[dt_FCT.Rows.Count - 1][i++] = cell.Value.ToString();
                             }
                         }
-                        dataGridView1.DataSource = dt_FCT.DefaultView;
+
+                        //dataGridView1.DataSource = dt_FCT.DefaultView;
+                    }
+                    using (var stream = File.Open(ofd.FileName, FileMode.Open, FileAccess.Read))
+                    {
+                        System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+                        using (IExcelDataReader reader = ExcelReaderFactory.CreateReader(stream))
+                        {
+                            DataSet result = reader.AsDataSet(new ExcelDataSetConfiguration()
+                            {
+                                ConfigureDataTable = (_) => new ExcelDataTableConfiguration() { UseHeaderRow = true }
+                            });
+                            tableCollection = result.Tables;
+                            qv_s1.Items.Clear();
+                            foreach (DataTable table in tableCollection)
+                            {
+                                new_sheet.Items.Add(table.TableName);
+                                qv_s2.Items.Add(table.TableName);
+                                qv_s3.Items.Add(table.TableName);
+                                qv_s4.Items.Add(table.TableName);
+                                qv_s5.Items.Add(table.TableName);
+                                qv_s6.Items.Add(table.TableName);
+                                qv_s7.Items.Add(table.TableName);
+                                qv_s8.Items.Add(table.TableName);
+
+                            }
+
+                        }
                     }
                 }
             }
@@ -292,10 +321,10 @@ namespace Load_Calculation_Project
                                 ConfigureDataTable = (_) => new ExcelDataTableConfiguration() { UseHeaderRow = true }
                             });
                             tableCollection = result.Tables;
-                            qv_s1.Items.Clear();
+                            DIVGL2_sheet.Items.Clear();
                             foreach (DataTable table in tableCollection)
                             {
-                                qv_s1.Items.Add(table.TableName);
+                                DIVGL2_sheet.Items.Add(table.TableName);
                             }
 
                         }
@@ -445,12 +474,12 @@ namespace Load_Calculation_Project
         {
             
             DataTable dt_DIVGL1_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
-            dataGridView2.DataSource = dt_DIVGL1_sheet;
+            dataGridView2.DataSource = dt_DIVGL1_sheet.DefaultView;
         }
 
         private void DIVGL2_sheet_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt_DIVGL2_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
+            DataTable dt_DIVGL2_sheet = tableCollection[DIVGL2_sheet.SelectedItem.ToString()];
             dataGridView1.DataSource = dt_DIVGL2_sheet;
         }
 
@@ -471,7 +500,7 @@ namespace Load_Calculation_Project
             DataTable dt_DIVGL5_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
             dataGridView1.DataSource = dt_DIVGL5_sheet;
         }
-
+     
         //public bool flag = false;
 
         public void form_validation()
@@ -553,12 +582,18 @@ namespace Load_Calculation_Project
 
         private void button12_Click(object sender, EventArgs e)
         {
-            DataView dv1 = dataGridView2.DataSource as DataView;
+           DataView dv1 = dataGridView2.DataSource as DataView;
             DataTable dt_DIVGL1_sheet = tableCollection[DIVGL1_sheet.SelectedItem.ToString()];
+            /*dt_DIVGL1_sheet.Columns.Add("NewColumn", typeof(System.Int32));
 
+            foreach (DataRow row in dt_DIVGL1_sheet.Rows)
+            {
+                //need to set value to NewColumn column
+                row["NewColumn"] = 0;   // or set it to some other value
+            }*/
             XLWorkbook wb = new XLWorkbook();
             wb.Worksheets.Add(dt_DIVGL1_sheet, "WorksheetName");
-            
+
             //DataTable loadDT = new DataTable();
             /*foreach (DataColumn dataColumn in dt_DIVGL1_sheet.Columns)
             {
@@ -568,28 +603,30 @@ namespace Load_Calculation_Project
                 }
                 
             }*/
-
+            //dt_DIVGL1_sheet.Columns.Add("NewColumn", typeof(System.Int32));
+            DataView dv = dataGridView1.DataSource as DataView;
             foreach (DataRow dataRow in dt_DIVGL1_sheet.Rows)
             {
                 List<string> dic = new List<string>();
                 dic.Add("val1");
                 dic.Add("val2");
+                dic.Add("val3");
                 int i = 0;
                 foreach (var item in dataRow.ItemArray)
                 {
                     //MessageBox.Show(item.ToString());
                    
                     dic[i] = item.ToString();
-                    i += 1;
-                   
+                    i += 1;  
                  }
-                DataView dv = dataGridView1.DataSource as DataView;
-
                 string mod = dic[0];
                 string val = dic[1];
-
+                string dle = dic[2];
+                //dt_DIVGL1_sheet.Rows[0]["DLE"] = dle;
                 char special_char = ' ';
                 string specialChar = @"\|!#$%&/()=?»«@£§€{}.-;'<>_,";
+                DataTable new_one_sheet = tableCollection[new_sheet.SelectedItem.ToString()];
+                int j = 0;
                 foreach (var item in mod)
                 {
                     if (specialChar.Contains(item))
@@ -597,13 +634,20 @@ namespace Load_Calculation_Project
                         special_char = item;
                         string[] smod = mod.Split(special_char);
                         dv.RowFilter = "Model ='" + smod[0] + "' AND Value ='" + val + "'";
+                        double value = dv.ToTable().Rows[j].Field<double>("DLE");
+                        dt_DIVGL1_sheet.Rows[0]["DLE"] = value;
                     }
                     else
                     {
                         dv.RowFilter = "Model ='" + mod + "' AND Value ='" + val + "'";
+                        double value = dv.ToTable().Rows[j].Field<double>("DLE");
+                        dt_DIVGL1_sheet.Rows[j]["DLE"] = value;
+ 
                     }
 
                 }
+                
+                
             }
             
            
@@ -631,6 +675,12 @@ namespace Load_Calculation_Project
         private void additioanl_gen_frame_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void new_sheet_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            DataTable new_one_sheet = tableCollection[new_sheet.SelectedItem.ToString()];
+            dataGridView1.DataSource = new_one_sheet.DefaultView;
         }
     }
 }

@@ -29,10 +29,10 @@ namespace Load_Calculation_Project
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -56,6 +56,7 @@ namespace Load_Calculation_Project
             this.DIVGL1 = new System.Windows.Forms.TextBox();
             this.DIVGL1_sheet = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -105,7 +106,8 @@ namespace Load_Calculation_Project
             this.label16 = new System.Windows.Forms.Label();
             this.export_result = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.new_sheet = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -116,23 +118,23 @@ namespace Load_Calculation_Project
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Location = new System.Drawing.Point(883, 21);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
@@ -142,23 +144,23 @@ namespace Load_Calculation_Project
             // 
             // dataGridView2
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView2.Location = new System.Drawing.Point(883, 278);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 25;
@@ -391,6 +393,16 @@ namespace Load_Calculation_Project
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(680, 611);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 67;
+            this.button12.Text = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -563,6 +575,8 @@ namespace Load_Calculation_Project
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.new_sheet);
             this.groupBox2.Controls.Add(this.label32);
             this.groupBox2.Controls.Add(this.qv_s8);
             this.groupBox2.Controls.Add(this.label33);
@@ -570,18 +584,16 @@ namespace Load_Calculation_Project
             this.groupBox2.Controls.Add(this.label27);
             this.groupBox2.Controls.Add(this.qv_s7);
             this.groupBox2.Controls.Add(this.label28);
+            this.groupBox2.Controls.Add(this.fatigue_ct);
             this.groupBox2.Controls.Add(this.qv_s3);
             this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.button10);
             this.groupBox2.Controls.Add(this.qv_s6);
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.qv_s2);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.qv_s5);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.qvexcel);
-            this.groupBox2.Controls.Add(this.qv_s1);
-            this.groupBox2.Controls.Add(this.btnbrowse);
             this.groupBox2.Location = new System.Drawing.Point(10, 22);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(849, 125);
@@ -750,7 +762,7 @@ namespace Load_Calculation_Project
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(20, 29);
+            this.label3.Location = new System.Drawing.Point(799, 663);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 15);
             this.label3.TabIndex = 11;
@@ -761,7 +773,7 @@ namespace Load_Calculation_Project
             // 
             this.qvexcel.Enabled = false;
             this.qvexcel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.qvexcel.Location = new System.Drawing.Point(140, 22);
+            this.qvexcel.Location = new System.Drawing.Point(160, 617);
             this.qvexcel.Name = "qvexcel";
             this.qvexcel.Size = new System.Drawing.Size(268, 23);
             this.qvexcel.TabIndex = 10;
@@ -770,7 +782,7 @@ namespace Load_Calculation_Project
             // 
             this.qv_s1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qv_s1.FormattingEnabled = true;
-            this.qv_s1.Location = new System.Drawing.Point(101, 62);
+            this.qv_s1.Location = new System.Drawing.Point(1029, 612);
             this.qv_s1.Name = "qv_s1";
             this.qv_s1.Size = new System.Drawing.Size(121, 23);
             this.qv_s1.TabIndex = 9;
@@ -779,7 +791,7 @@ namespace Load_Calculation_Project
             // btnbrowse
             // 
             this.btnbrowse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnbrowse.Location = new System.Drawing.Point(414, 21);
+            this.btnbrowse.Location = new System.Drawing.Point(434, 617);
             this.btnbrowse.Name = "btnbrowse";
             this.btnbrowse.Size = new System.Drawing.Size(75, 23);
             this.btnbrowse.TabIndex = 8;
@@ -869,7 +881,7 @@ namespace Load_Calculation_Project
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(28, 619);
+            this.label2.Location = new System.Drawing.Point(111, 620);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 15);
             this.label2.TabIndex = 62;
@@ -878,7 +890,7 @@ namespace Load_Calculation_Project
             // fatigue_ct
             // 
             this.fatigue_ct.Enabled = false;
-            this.fatigue_ct.Location = new System.Drawing.Point(160, 616);
+            this.fatigue_ct.Location = new System.Drawing.Point(140, 23);
             this.fatigue_ct.Name = "fatigue_ct";
             this.fatigue_ct.Size = new System.Drawing.Size(268, 23);
             this.fatigue_ct.TabIndex = 61;
@@ -886,7 +898,7 @@ namespace Load_Calculation_Project
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button10.Location = new System.Drawing.Point(434, 615);
+            this.button10.Location = new System.Drawing.Point(414, 22);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 59;
@@ -923,15 +935,24 @@ namespace Load_Calculation_Project
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button12
+            // new_sheet
             // 
-            this.button12.Location = new System.Drawing.Point(515, 616);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 67;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.new_sheet.FormattingEnabled = true;
+            this.new_sheet.Location = new System.Drawing.Point(101, 62);
+            this.new_sheet.Name = "new_sheet";
+            this.new_sheet.Size = new System.Drawing.Size(121, 23);
+            this.new_sheet.TabIndex = 59;
+            this.new_sheet.SelectedIndexChanged += new System.EventHandler(this.new_sheet_SelectedIndexChanged_1);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(11, 26);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(110, 15);
+            this.label17.TabIndex = 80;
+            this.label17.Text = "Quickerview Excel";
             // 
             // load_comparision_mainpage
             // 
@@ -942,17 +963,19 @@ namespace Load_Calculation_Project
             this.Controls.Add(this.label16);
             this.Controls.Add(this.export_result);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.fatigue_ct);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.button10);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.qvexcel);
+            this.Controls.Add(this.btnbrowse);
+            this.Controls.Add(this.qv_s1);
             this.Name = "load_comparision_mainpage";
             this.Text = "Loads Comparision";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -1044,6 +1067,8 @@ namespace Load_Calculation_Project
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.ComboBox new_sheet;
+        private System.Windows.Forms.Label label17;
     }
 }
 
